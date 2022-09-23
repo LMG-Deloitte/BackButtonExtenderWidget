@@ -1,0 +1,31 @@
+{
+  "name": "backbutton",
+  "widgetName": "BackButton",
+  "version": "1.0.0",
+  "description": "My widget description",
+  "copyright": "Deloitte",
+  "author": "Luke",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "Apache-2.0",
+  "config": {
+    "projectPath": "./tests/testProject"
+  },
+  "packagePath": "deloitte",
+  "scripts": {
+    "start": "npm run dev",
+    "build": "pluggable-widgets-tools build:native",
+    "dev": "pluggable-widgets-tools start:native",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:native"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^9.0.0"
+  },
+  "dependencies": {
+
+  }
+}
