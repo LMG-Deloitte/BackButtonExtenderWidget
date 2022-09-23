@@ -11,6 +11,7 @@ export class BackButton extends Component {
 
     noAction = () => {
       //Nothing in here
+      //Functionality can be added here if this is wanted, I do not believe it is possible to easily close a page here - LMG 
     }
   
     componentDidMount() {
@@ -31,21 +32,9 @@ export class BackButton extends Component {
   
     render() {
       return ( 
-        <View></View>
+        <View></View>//If this function is empty an error will be shown in the console
       );
     }
   };
-  
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      alignItems: "center",
-      justifyContent: "center"
-    },
-    text: {
-      fontSize: 18,
-      fontWeight: "bold"
-    }
-  });
   
   export default BackButton;
